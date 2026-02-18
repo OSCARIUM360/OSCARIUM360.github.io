@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Aby, Mi San Valentín</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bg-music" loop><source src="Imagenes/Cancion.mp3" type="audio/mpeg"></audio>
+    <audio id="pagina-song"><source src="Imagenes/Pagina.mp3" type="audio/mpeg"></audio>
+    <audio id="dorado-song"><source src="Imagenes/Dorado.mp3" type="audio/mpeg"></audio>
+
+    <button id="music-control">🎵</button>
+
+    <header>
+        <p class="subtitle">Para mi persona favorita</p>
+        <h1 id="main-title">Aby</h1>
+        <p>— Una muestra de mi amor —</p>
+    </header>
+
+    <div class="container">
+        <img id="first-zigzag" src="Imagenes/FavoritaAby.jpeg" class="zigzag-img right img-1">
+        <img src="Imagenes/Linda.jpeg" class="zigzag-img left img-2">
+        <img src="Imagenes/Navidad.jpeg" class="zigzag-img right img-3">
+        <img src="Imagenes/Bonita.jpeg" class="zigzag-img left img-4">
+
+        <article class="love-letter">
+            <p>Hay momentos en la vida que se quedan grabados como una canción que nunca deja de sonar. Desde que llegaste a mi vida, has traído contigo una luz que no sabía que me faltaba.</p>
+            <p>Eres esa mezcla perfecta de calma, seriedad y alegría que hace que todo tenga más sentido. Me encanta la forma en que el mundo parece detenerse cuando estamos juntos.</p>
+            <p>Nuestro amor tiene esa elegancia de lo que es real y sincero. Eres mi princesa, mi compañera de vida y el regalo más bonito que Dios me ha dado.</p>
+            <p style="font-family: 'Playfair Display'; font-size: 2.5rem; color: var(--vintage-rose); margin-top: 20px;">♥</p>
+        </article>
+
+        <div class="book-display-section">
+            <div class="book-trigger" id="open-book-btn">
+                <span class="book-icon">📜</span>
+                <span>Abrir nuestro álbum de recuerdos</span>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="texto-final">
+                <p style="font-style: italic; color: var(--vintage-gold); font-size: 1.2rem; margin: 0;">Eres lo mejor que me ha pasado...</p>
+                <p style="margin-top: 20px; opacity: 0.5;">14 de Febrero, 2026</p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="bookModal" class="book-modal">
+        <div class="book-content">
+            <span class="close-book-btn" id="closeBookBtn">&times;</span>
+            <button class="nav-side-btn" id="prev-page">❮</button>
+            <div class="book-page-wrapper" id="pageWrapper">
+                <div class="book-page" id="pageLeft"></div>
+                <div class="book-page" id="pageRight"></div>
+            </div>
+            <button class="nav-side-btn" id="next-page">❯</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
